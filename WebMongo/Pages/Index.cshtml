@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="card">
+    <div class="card-body">
+        Nom du cours: @Model.Formations.First().Cours
+    </div>
+</div>

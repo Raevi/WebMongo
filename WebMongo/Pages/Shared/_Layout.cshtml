@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebMongo</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a asp-page="/Index" class="nav-link active">WebMongo</a>
+            </li>
+        </ul>
+
+        <div class="body-content">
+       
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2019 - WebMongo</p>
+            </footer>
+
+        </div>
+
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
